@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+@import "~antd/dist/antd.css";
+
+body {
+  background-color: white;
+  overflow-y: hidden;
+  font-family: "Cairo", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home {
+  display: flex;
+  width: 1100px;
+  height: 600px;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left {
+  width: 50%;
+  background-color: #ff4b2b;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.right {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 50px;
+}
+.btn {
+  background-color: #ff4b2b;
   color: white;
+  font-weight: bold;
+  border-radius: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.ant-form-item-label label {
+  font-size: 18px;
+  font-weight: 600;
 }
+.heading {
+  color: #ff4b2b;
+  font-size: 50px;
+  font-weight: bold;
+  align-self: center;
+  margin-bottom: 40px;
+  font-family: "Dancing Script", cursive;
+}
+.ant-input:focus {
+  border-color: #ff4b2b;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 2px rgba(87, 168, 233, 0.2);
+  box-shadow: 0 0 0 2px rgba(87, 168, 233, 0.2);
+}
+.editView {
+  display: flex;
+  gap: 10px;
+}
+.infoSection {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  width: 80%;
+  padding: 5px 15px 5px 15px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 0px 60px 0px 60px;
 }
